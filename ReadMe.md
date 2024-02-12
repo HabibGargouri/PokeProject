@@ -22,7 +22,7 @@ Exécutez `pip install -r requirements.txt`
 
 ### Frontend :
 
-Naviguez vers `./FroentEnd/PokeFront/`
+Naviguez vers `./PokeFront/`
 Exécutez `npm install`
 
 ## Exécution
@@ -35,7 +35,7 @@ Dans `./BackEnd` , lancez `python manage.py runserver`
 
 ### Frontend :
 
-Dans `./FroentEnd/PokeFront/` , exécutez `npm run dev`
+Dans `./PokeFront/` , exécutez `npm run dev`
 
 ### Détails de l'API
 
