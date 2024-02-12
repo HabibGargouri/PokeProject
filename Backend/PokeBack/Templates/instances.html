@@ -1,0 +1,11 @@
+<!-- instances.html -->
+<h1>All Instances in Database</h1>
+<ul>
+    {% for instance in instances %}
+        <li>{{ instance }} 
+            {% for type in instance.stats.all %}
+            {{ type }} 
+            {% endfor %}
+        </li>
+    {% endfor %}
+</ul>
