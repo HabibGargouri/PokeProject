@@ -18,10 +18,7 @@ class PokemonViewsTestCase(TestCase):
 
     def test_get_pokemon_data_by_id(self):
         # Test retrieval of specific pokemon data by ID
-        try :
-            response = self.client.get(reverse('get_pokemon_data_by_id', kwargs={'pokemon_id': self.pokemon1.pokemonId}))
-        except:
-            print(self.client.get(reverse('get_pokemon_data_by_id', kwargs={'pokemon_id': self.pokemon1.pokemonId})))
+        response = self.client.get(reverse('get_pokemon_data_by_id', kwargs={'pokemon_id': self.pokemon1.pokemonId}))
         self.assertEqual(response.status_code, 200)
         self.assertIn('pokemon_data', response.json())
 
