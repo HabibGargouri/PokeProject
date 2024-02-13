@@ -43,13 +43,14 @@ Voici les endpoints disponibles :
 
 ### Backend :
 
-`pokemons/<int:pokemon_id>` : pour obtenir les données d'un Pokémon par son identifiant.
-`pokemons` : pour obtenir les données paginées des Pokémon.
+
+`GET` : `pokemons/<int:pokemon_id>` : pour obtenir les données d'un Pokémon par son identifiant.
+`GET` : `pokemons` : pour obtenir les données paginées des Pokémon.
 
 ### Frontend :
 
-`/` : pour obtenir les pokémons 
-`/:id` : pour obtenir les détails d'un pokémon
+`GET` : `/` : pour obtenir les pokémons 
+`GET` : `/:id` : pour obtenir les détails d'un pokémon
 
 
 ## Blocages et Solutions
